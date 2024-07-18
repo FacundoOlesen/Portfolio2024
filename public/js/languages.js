@@ -15,7 +15,7 @@ const figForm= document.querySelector(".fig-form")
 const formTitles1 = document.querySelector(".form h4")
 const formTitles2 = document.querySelector(".form h5")
 const formIpts = document.querySelectorAll(".ipt label")
-const get = document.querySelectorAll('[href="assets/FacundoOlesenCV.pdf"]');
+const get = document.querySelectorAll('[href="assets/FacundoOlesen_resume.pdf"]');
 const sendValue = document.querySelector(".submit")
 
 window.addEventListener('onload', setES())
@@ -102,20 +102,10 @@ function setEN() {
         skillsLabel[3].innerHTML="👨‍💻 Back - End"
         skillsName[5].innerHTML="MySQL"
         skillsLabel[5].innerHTML="📊 Database"
-        skillsName[6].innerHTML="Figma"
+       skillsName[6].innerHTML="Figma"
         skillsLabel[6].innerHTML="🎨 Front - End"
         skillsName[7].innerHTML="Git"
         skillsLabel[7].innerHTML="💾 Version"
-        skillsName[8].innerHTML="JPA"
-        skillsLabel[8].innerHTML="👨‍💻 Back - End"
-        skillsName[9].innerHTML="Hibernate"
-        skillsLabel[9].innerHTML="👨‍💻 ORM"
-        skillsName[10].innerHTML="Spring Boot"
-        skillsLabel[10].innerHTML="👨‍💻 Back - End"
-        skillsName[11].innerHTML="Spring Cloud"
-        skillsLabel[11].innerHTML="💾 Version"
-        skillsName[12].innerHTML="Microservices"
-        skillsLabel[12].innerHTML="🏛️ Architecture"
         /*formDate.innerHTML="24 Nov 2023"*/
         formTitle.innerHTML="Do you want to leave me a message? Fill in this form."
         formTitles1.innerHTML="FORM"
@@ -237,5 +227,3 @@ langIcons[0].onclick = function (e) {
 langIcons[1].onclick = function (e) {
     setEN()
 }
-
-
