@@ -15,7 +15,7 @@ const figForm= document.querySelector(".fig-form")
 const formTitles1 = document.querySelector(".form h4")
 const formTitles2 = document.querySelector(".form h5")
 const formIpts = document.querySelectorAll(".ipt label")
-const get = document.querySelectorAll('[href="assets/CV OLESEN FACUNDO (EN).pdf"]');
+const get = document.querySelectorAll('[href="assets/FacundoOlesenCV.pdf"]');
 const sendValue = document.querySelector(".submit")
 
 window.addEventListener('onload', setES())
@@ -51,7 +51,7 @@ function setEN() {
         <path
             d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z">
         </path>
-    </svg><span><a class="down" href="assets/CV OLESEN FACUNDO (EN).pdf" download="">Download  CV</a></span>`
+    </svg><span><a class="down" href="assets/FacundoOlesen_resume.pdf" download="">Download  CV</a></span>`
         dataLabels[2].innerHTML =`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
         class="w-5 h-5">
         <path
@@ -123,7 +123,7 @@ function setEN() {
         formIpts[0].innerHTML="Name"
         formIpts[1].innerHTML="E-mail"
         formIpts[2].innerHTML="Message"
-        get[1].href="assets/CV OLESEN FACUNDO (EN).pdf"
+        get[1].href="assets/FacundoOlesen_resume.pdf"
         sendValue.value="Send"
         formTitle2.innerHTML="Your message was sent successfully. I will be in touch with you soon. Bye!"
         figForm.innerHTML="I'm delighted that you've come this far."
@@ -161,7 +161,7 @@ function setES() {
     <path
         d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z">
     </path>
-</svg><span><a class="down" href="assets/CV OLESEN FACUNDO.pdf" download="">Descargar CV</a></span>`
+</svg><span><a class="down" href="assets/FacundoOlesenCV.pdf" download="">Descargar CV</a></span>`
     dataLabels[2].innerHTML =`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
     class="w-5 h-5">
     <path
@@ -222,7 +222,7 @@ function setES() {
     formIpts[0].innerHTML="Nombre"
     formIpts[1].innerHTML="E-mail"
     formIpts[2].innerHTML="Mensaje"
-    get[1].href= "assets/CV OLESEN FACUNDO.pdf"
+    get[1].href= "assets/FacundoOlesenCV.pdf"
     sendValue.value="Enviar"
     formTitle2.innerHTML="Has enviado tu mensaje con éxito. Me contactaré contigo pronto. ¡Adiós!"
     figForm.innerHTML="Estoy muy contento de que hayas llegado hasta aquí."
