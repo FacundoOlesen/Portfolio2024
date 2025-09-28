@@ -1,14 +1,54 @@
 [
     {
         "id": 1,
+        "title": "App de alquiler de scooters",
+        "image": "./assets/scootrs.jpg",
+        "date": "10 Apr 2025",
+        "text": "👨‍💻 Desarrollo de una aplicación para gestionar alquileres de scooters en la ciudad mediante arquitectura de microservicios.<br> <br> Uso de Hibernate, JPA y MySQL para la persistencia de datos y arquitectura escalable y tolerante a fallos. <br> <br> Implementación de patrones de diseño (Service Registry y Discovery con Eureka Server, Load Balancing, Circuit Breaker, API Gateway, Config Server) <br> <br> Sistema de autenticación y autorización con JWT y encriptación de datos sensibles mediante SHA-256. ",
+        "label": "👨‍💻 Back - End", 
+        "label2": "⚙️ Microservicios",
+        "text2": "Échale un vistazo",
+        "link": " clickeando aquí!",
+        "linkdeploy": "https://github.com/FacundoOlesen/MonopatinesApp",
+        "tags": "JAVA, Spring Boot, Microservicios",
+        "linkgh": "https://github.com/FacundoOlesen/MonopatinesApp",
+        "pin": "Fijado",
+        "svgPin": "<svg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px;' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-4 h-4'>     <path fill=currentColor d='M16,12V4H17V2H7V4H8V12L6,14V16H11.2V22H12.8V16H18V14L16,12Z'</path> </svg>"
+        ,
+        "linkpr": "https://github.com/FacundoOlesen/MonopatinesApp"
+
+    },
+
+    {
+        "id": 2,
+        "title": "Sitio de juegos 4 en línea",
+        "image": "./assets/4inrow.png",
+        "date": "17 Oct 2024",
+        "text": "👨‍💻 Desarrollo de un sitio web interactivo de juegos utilizando JavaScript, HTML5 y CSS3. <br> <br> Implementación de la lógica de 4, 5, 6 o N en línea, configurable según el tablero elegido por el usuario. <br> <br>  Énfasis en algoritmos de detección de patrones ganadores y optimización del flujo de turnos.<br> <br>  Manejo de eventos en canvas para la detección de clics, animaciones y renderizado dinámico de las fichas.<br> <br>  Proyecto orientado a mejorar habilidades en desarrollo web Front-End y lógica algorítmica. ",
+        "label": "👨‍💻 Algoritmos", 
+        "label2": "🎨 Front - End",
+        "text2": "Échale un vistazo",
+        "link": " clickeando aquí!",
+        "linkdeploy": "https://facundoolesen.github.io/TPE-Interfaces2024/TPE3/game.html",
+        "tags": "PHP, POO, MYSQL",
+        "linkgh": "https://facundoolesen.github.io/TPE-Interfaces2024/TPE3/game.html",
+        "pin": "Fijado",
+        "svgPin": "<svg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px;' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-4 h-4'>     <path fill=currentColor d='M16,12V4H17V2H7V4H8V12L6,14V16H11.2V22H12.8V16H18V14L16,12Z'</path> </svg>"
+        ,
+        "linkpr": "https://facundoolesen.github.io/TPE-Interfaces2024/TPE3/game.html"
+
+    },
+
+     {
+        "id": 3,
         "title": "TID Store",
-        "image": "./assets/project1.png.jpg",
+        "image": "https://d1ih8jugeo2m5m.cloudfront.net/2023/06/paginas-de-ropa-en-linea.jpg",
         "date": "17 Oct 2022",
-        "text": "👨‍💻 Back-End & Front-End E-commerce. JSON Web Token (JWT). Manejo de Sesiones por roles. Encriptación con SHA256. CRUD. MVC. Filtrado por categorías y más!.",
+        "text": "👨‍💻 Back-End & Front-End E-commerce. <br> <br> JSON Web Token (JWT). <br> <br> Manejo de Sesiones por roles. <br> <br>Encriptación de contraseñas con SHA256. <br> <br> El catálogo de productos incluye paginado, filtrado y sort dinámico. <br> <br>  Arquitectura MVC. <br> <br> MySQL para la persistencia de datos.  ",
         "label": "👨‍💻 Back - End", 
         "label2": "🎨 Front - End",
         "text2": "Échale un vistazo",
-        "link": " clickiando aquí!",
+        "link": " clickeando aquí!",
         "linkdeploy": "https://github.com/FacundoOlesen/TPE_WEB2",
         "tags": "PHP, POO, MYSQL",
         "linkgh": "https://github.com/FacundoOlesen/TPE_WEB2",
@@ -18,49 +58,11 @@
         "linkpr": "https://github.com/FacundoOlesen/TPE_WEB2"
 
     },
-    {
-        "id": 2,
-        "title": "Netflix Clon",
-        "image": "https://cdn.mos.cms.futurecdn.net/MCXLa9ouuBgHXsCaX2wekF.jpg",
-        "date": "20 Aug 2023",
-        "text": "🎬 Implementación del Log In & página principal de Netflix para Móviles, Tablets y Desktop. Clon realizado bajo el diseño Mobile-First. Media queries.",
-        "label": "🎨 Front - End",
-        "label2": "",
-        "text2": "Chequealo",
-        "link": " aquí!",
-        "linkdeploy": "https://my-clone-one.vercel.app/",
-        "tags": "HTML, CSS, JAVASCRIPT",
-        "linkgh": "https://github.com/FacundoOlesen/Clone",
-        "pin": "",
-        "svgPin": ""     ,
-        "linkpr": "https://github.com/FacundoOlesen/Clone"
-    }
-    ,
-    {
-       "id": 3,
-        "title": "API REST",    
-        "image": "https://www.dotcom-monitor.com/wiki/wp-content/uploads/sites/2/2019/10/Postman_login-1.jpg",
-        "date": "5 Dic 2022",
-        "text": "👨‍💻 Creación de una API REST. CRUD. Autenticación JSON Web Token (JWT). Sesiones. Encriptación con SHA256. Paginado. Filtrado. Sort. Arquitectura MVC.",
-        "label": "👨‍💻 Back - End",
-        "label2": "",
-        "text2": "Chequeá el código",
-        "link": " aquí!",
-        "linkdeploy": "https://github.com/FacundoOlesen/TPE_WEB_2_PARTE_2",
-        "tags": "PHP, MYSQL, POSTMAN",
-        "linkgh": "https://github.com/FacundoOlesen/TPE_WEB_2_PARTE_2",
-        "svgPin": "",
-        "pin": ""
-        ,
-        "linkpr": "https://github.com/FacundoOlesen/TPE_WEB_2_PARTE_2"
-
-    }
-    ,
 
     {
         "id": 4,
         "title": "TUDAI Gaming",
-        "text": "Proyecto de Universidad en el cual se lleva a cabo una página web de juegos.",
+        "text": "Proyecto de Universidad en el cual se lleva a cabo una página web de juegos. <br> <br><br> Interactividad con animaciones y eventos. ",
         "label": "🎨 Front - End",
         "label2": "",
         "image": "assets/tudaigaming.jpg",
@@ -70,8 +72,8 @@
         "linkdeploy": "https://tudaigaming.vercel.app/",
         "tags": "HTML, CSS, JAVASCRIPT",
         "linkgh": "https://github.com/FacundoOlesen/TPE_Interfaces/tree/main/TP2",
-        "svgPin": "",
-        "pin": ""
+         "pin": "Fijado",
+        "svgPin": "<svg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px;' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-4 h-4'>     <path fill=currentColor d='M16,12V4H17V2H7V4H8V12L6,14V16H11.2V22H12.8V16H18V14L16,12Z'</path> </svg>"
         ,
         "linkpr": "https://github.com/FacundoOlesen/TPE_Interfaces/tree/main/TP2"
 

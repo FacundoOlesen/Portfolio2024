@@ -353,7 +353,7 @@ a span {
 }
 
 .hidden {
-    display: none;
+    display: none; 
 }
 
 .show {
@@ -487,9 +487,12 @@ body {
 
 .proyects {
     overflow-y: hidden;
-
+ 
 }
-
+.cont-card {
+    width: 97%;
+    height: 820px;
+}
 
 
 .cont-skills {
@@ -705,16 +708,11 @@ button:hover {
 
 
 
-
 /*.proyects:hover {
     background-color: #212529;
     border-radius: 0.5rem; 
 }*/
 
-.cont-card {
-    width: 97%;
-    height: 580px;
-}
 
 .cont-contact {
     width: 147%;
@@ -1163,17 +1161,16 @@ footer {
 
     .cont-card {
         width: 624px;
-        height: 690px;
-
+        height: auto;
+        margin-top: 25px;
     }
-
-    
 
     .proyects {
         width: 110%;
         height: 920%;
         padding-left: -2222rem;
         overflow-y: hidden;
+        gap: 40px;
     }
     .bg-header {
         background: url("https://i.redd.it/n8agw6z2smyb1.gif");

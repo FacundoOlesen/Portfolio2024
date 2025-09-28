@@ -31,8 +31,8 @@ function setEN() {
                     d="M19 4c1.08 0 2.027.57 2.555 1.427L12 11.797l-9.555-6.37a2.999 2.999 0 0 1 2.354-1.42L5 4h14z"/>
             </g>
         </svg>`
-        dataP[0].innerHTML= "Passionate Developer 👾"
-        dataP[1].innerHTML ="Advanced student of Software Development in UNICEN, Buenos Aires, Argentina."
+        dataP[0].innerHTML= "Software Developer 👾"
+        dataP[1].innerHTML ="Graduated from <a href='https://www.unicen.edu.ar/' target='_blank'>UNICEN</a>, Buenos Aires, Argentina."
         dataP [2].innerHTML="Enthusiastic programmer focused on improving his skills day by day."
         dataLabels[0].innerHTML =`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
         class="w-5 h-5">
@@ -72,7 +72,7 @@ function setEN() {
         menu [2].innerHTML="Skills"
         menu [3].innerHTML="Contact"
         greet.innerHTML ="Hi! 👋"
-        pAbout[0].innerHTML ="I am Facundo Olesen, a passionate programmer. Currently studying a Tecnicature in Development of Computer Applications at UNICEN, Argentina."
+        pAbout[0].innerHTML ="I am Facundo Olesen, a passionate programmer. Graduated with a Bachelor's degree in Software Development from <a href='https://www.unicen.edu.ar/' target='_blank'>UNICEN</a>, Argentina."
         pAbout[1].innerHTML ="During my academic career, I've built a solid base in programming, data structures, and algorithms, Object-Oriented Programming (OOP), UX/UI. <br> <br> Furthermore, I have also worked on web development projects using different technologies for the Front-End (HTML, CSS, and JavaScript) and the Back-End (JAVA, Spring, Spring Boot, Spring Cloud, Microservices, JPA, Hibernate, Docker | PHP and MySQL)."       
          pAbout [2].innerHTML="Every day, I seek new opportunities to learn and grow in the field of web development. My goal is not only to apply my technical skills to innovative projects, it is also to contribute to the team with a proactive approach and creative solutions."
         pAbout[3].innerHTML ="I'm excited to continue evolving as a professional and be part of projects that challenge and inspire. Ready to bring my passion and skills to projects that make a difference."
@@ -131,8 +131,8 @@ function setES() {
                 d="M19 4c1.08 0 2.027.57 2.555 1.427L12 11.797l-9.555-6.37a2.999 2.999 0 0 1 2.354-1.42L5 4h14z"/>
         </g>
     </svg>`
-    dataP[0].innerHTML= "Desarrollador apasionado 👾"
-    dataP[1].innerHTML ="Estudiante de Desarrollo de Software en UNICEN, Buenos Aires, Argentina."
+    dataP[0].innerHTML= "Software Developer 👾"
+    dataP[1].innerHTML ="Graduado de la <a href='https://www.unicen.edu.ar/' target='_blank'>UNICEN</a>, Buenos Aires, Argentina."
     dataP [2].innerHTML="Entusiasta programador enfocado en mejorar día a día sus habilidades."
     dataLabels[0].innerHTML =`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
     class="w-5 h-5">
@@ -172,9 +172,9 @@ function setES() {
     menu [2].innerHTML="Habilidades"
     menu [3].innerHTML="Contacto"
     greet.innerHTML ="¡Hola! 👋"
-    pAbout[0].innerHTML ="Soy Facundo Olesen, un entusiasta programador. Actualmente estoy cursando la Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas en UNICEN, Argentina."
-    pAbout[1].innerHTML ="Durante mi carrera académica, he construido una sólida base en programación, estructuras de datos y algoritmos, Programación Orientada a Objetos (POO), UX/UI.<br> <br> Por otra parte, también, he trabajado en proyectos de Desarrollo Web con diferentes tecnologías para el Front-End (HTML, CSS y JavaScript) y para el Back-End (JAVA, Spring, Spring Boot, Spring Cloud, Microservicios, JPA, Hibernate, Docker | PHP, MySQL)."   
-     pAbout [2].innerHTML="Cada día, busco nuevas oportunidades para aprender y crecer en el ámbito del desarrollo web. Mi objetivo no es solo aplicar mis habilidades técnicas en proyectos innovadores, si no también contribuir al equipo con un enfoque proactivo y soluciones creativas."
+    pAbout[0].innerHTML ="Soy Facundo Olesen, un entusiasta programador. Graduado de la Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas en <a href='https://www.unicen.edu.ar/' target='_blank'>UNICEN</a>, Argentina."
+    pAbout[1].innerHTML ="En 2024 realicé una pasantía en EDSA, donde adquirí experiencia práctica trabajando con RPA. <br> <br>Durante mi carrera académica, he construido una sólida base en programación, estructuras de datos y algoritmos, Programación Orientada a Objetos (POO), UX/UI.<br> <br> Por otra parte, también, he trabajado en proyectos de Desarrollo Web con diferentes tecnologías para el Front-End (HTML, CSS y JavaScript) y para el Back-End (JAVA, Spring, Spring Boot, Spring Cloud, Microservicios, JPA, Hibernate, Docker | PHP, MySQL)."   
+    pAbout [2].innerHTML="Cada día, busco nuevas oportunidades para aprender y crecer en el ámbito del desarrollo web. Mi objetivo no es solo aplicar mis habilidades técnicas en proyectos innovadores, si no también contribuir al equipo con un enfoque proactivo y soluciones creativas."
     pAbout[3].innerHTML ="Estoy emocionado por seguir evolucionando como profesional y ser parte de proyectos que desafíen e inspiren. Preparado para aportar mi pasión y habilidades a iniciativas que marquen la diferencia."
     pAbout [4].innerHTML="¡Espero escuchar de tí!"
     pAbout [5].innerHTML="¡Cuídate!"
