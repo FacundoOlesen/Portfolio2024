@@ -62,7 +62,7 @@
     {
         "id": 4,
         "title": "TUDAI Gaming",
-        "text": "Proyecto de Universidad en el cual se lleva a cabo una página web de juegos. <br> <br><br> Interactividad con animaciones y eventos. ",
+        "text": "Proyecto de Universidad en el cual se lleva a cabo una página web de juegos. <br> <br> Interactividad con animaciones y eventos.<br> <br>Implementación de carrusel animado. <br> <br> Desarrollo de login y registro. <br> <br> Enfoque en experiencia de usuario (UX/UI). ",
         "label": "🎨 Front - End",
         "label2": "",
         "image": "assets/tudaigaming.jpg",

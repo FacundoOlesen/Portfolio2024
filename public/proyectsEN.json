@@ -62,7 +62,7 @@
     {
         "id": 4,
         "title": "TUDAI Gaming",
-        "text": "University project involving the development of a web page with games. <br> <br><br> Interactivity with animations and event handling. ",
+        "text": "University project involving the development of a gaming website. <br> <br> Interactivity with animations and event handling. <br> <br> Implementation of an animated carousel. <br> <br> Development of login and registration. <br> <br> Focus on user experience (UX/UI).",
         "label": "🎨 Front - End",
         "label2": "",
         "image": "assets/tudaigaming.jpg",
