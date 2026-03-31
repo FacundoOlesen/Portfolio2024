@@ -7,7 +7,13 @@
     --gray: #868e96;
 }
 
-
+.link-underlined{
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: var(--spancolor);
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 4px; 
+}
 
 
 h2 {
