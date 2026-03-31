@@ -353,7 +353,7 @@
                                     <p class="date" id="date-form"></p>
                                 </div>
                                 <h4 class="form-title"></h4>
-                                <form action="/" method="post" name="contactamepo" class="form" target="uploader_iframe">
+                                <form  name="contactamepo" id="contact-form" class="form" target="uploader_iframe">
                                     <h4></h4>
                                     <h5></h5>
                                     <div class="cont-ipt">
@@ -394,6 +394,34 @@
                                     <iframe id="uploader_iframe" name="uploader_iframe" style="display: none;"></iframe>
 
                                 </form>
+
+                                                                <script type="text/javascript"
+                                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+                                <script type="text/javascript">
+                                    emailjs.init('vLY_7Zz5ZWc25Aav1');
+
+                                    window.onload = function () {
+                                        const form = document.getElementById('contact-form');
+                                        const loader = document.querySelector('.container.hidden'); 
+
+                                        form.addEventListener('submit', function (event) {
+                                            event.preventDefault(); 
+                                            if (loader) loader.classList.remove('hidden');
+
+                                            emailjs.sendForm('service_7icflxc', 'template_cw1gxmc', this)
+                                                .then(() => {
+                                                    form.reset(); 
+
+                                                    // Ocultar loader
+                                                    if (loader) loader.classList.add('hidden');
+                                                }, (error) => {
+
+                                                    if (loader) loader.classList.add('hidden');
+                                                });
+                                        });
+                                    }
+                                </script>
 
                             </div>
                         </div>
@@ -470,20 +498,20 @@
                     </svg>
                 </a>
             </div>
-            <p class="footer-data">Facundo Olesen © 2026</p>
+            <p class="footer-data">Facundo Olesen © 2025</p>
         </div>
 
     </footer>
-<script src="../js/script.js"></script>
+<!--<script src="../js/script.js"></script>
     <script src="../js/projects.js"></script>
     <script src="../js/languages.js"></script>
     <script src="../js/form.js"></script>
-    <script src="../js/ex.js"></script>
+     -->
 
-<!--<script src="../public/js/projects.js"></script>
+   <script src="../public/js/script.js"></script>
+<script src="../public/js/projects.js"></script>
 <script src="../public/js/languages.js"></script>
 <script src="../public/js/form.js"></script> 
-<script src="../public/js/ex.js"></script>   -->
 </body>
 
 </html>
