@@ -463,14 +463,7 @@ figcaption {
     }
   }
 
-.skills {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 180px);
-    width: 100%;
-    overflow: hidden;
-    grid-area: auto;
-    justify-content: center;
-}
+
 
 body {
     overflow-x: hidden;
@@ -501,9 +494,7 @@ body {
 }
 
 
-.cont-skills {
-    overflow-x: hidden;
-}
+
 
 .about-me {
     padding-left: 1rem;
@@ -1248,14 +1239,7 @@ footer {
         margin-top: 0rem;
     }
 
-    .skills {
-        display: grid;
-        overflow: hidden;
-        width: 105%;
-        grid-template-columns: repeat(2, 23rem);
-        padding-left: 6rem;
-        gap: 20px;
-    }
+
 
     .pdata {
         display: flex;
@@ -1529,4 +1513,190 @@ footer {
     
     
     
+}
+
+/* =========================================
+   SECCIÓN EXPERIENCIA (1 COLUMNA)
+   ========================================= */
+
+:root {
+  --fondo-tarjeta: #212529; /* Gris oscuro que combina con los hovers de tus botones */
+  --texto-principal: #ffffff;
+  --texto-secundario: #a0a0b0;
+  --neon-rosa: #ff33bb;
+  --neon-cyan: #00e5ff;
+}
+@media (max-width: 680px) {
+.seccion-timeline {
+    padding-right: 20px !important;
+}
+
+}
+.seccion-timeline {
+  width: 100%;
+  padding: 20px 0; /* Sin paddings laterales extra para no pelear con tu .info-main */
+  font-family: var(--font-family); /* Hereda tu fuente global */
+  color: var(--texto-principal);
+  box-sizing: border-box;
+}
+
+.titulo-seccion {
+  text-align: left; /* Alineado a la izquierda para seguir tu estilo */
+  font-size: var(--font-size-h2);
+  margin-bottom: 40px;
+  color: var(--color);
+}
+
+/* Contenedor principal de la línea */
+.timeline {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px; 
+}
+
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: linear-gradient(to bottom, var(--neon-rosa), var(--neon-cyan));
+  top: 0;
+  bottom: 0;
+  left: 20px; 
+  transform: translateX(-50%); /* Centrado matemático exacto */
+  border-radius: 4px;
+  z-index: 0;
+}
+
+/* Contenedor de cada item */
+.timeline-item {
+  width: 100%; 
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 60px; /* Deja el hueco perfecto para la línea y el punto */
+}
+
+/* Los puntos sobre la línea */
+.timeline-punto {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: hsl(214 14% 10%); /* Mismo color de fondo de tu web */
+  top: 30px;
+  left: 20px;
+  transform: translateX(-50%); /* Alineación perfecta con la línea */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Colores de los puntos */
+.glow-cyan .timeline-punto {
+  border: 4px solid var(--neon-cyan);
+  box-shadow: 0 0 10px var(--neon-cyan);
+}
+
+.glow-rosa .timeline-punto {
+  border: 4px solid var(--neon-rosa);
+  box-shadow: 0 0 10px var(--neon-rosa);
+}
+
+/* Tarjetas de contenido */
+.timeline-contenido {
+  width: 100%; 
+  padding: 25px;
+  background-color: var(--fondo-tarjeta);
+  border-radius: 12px;
+  position: relative;
+  /* CAMBIA LA TRANSICIÓN A ESTA: */
+  transition: all 0.3s ease;
+  /* AGREGÁ ESTE BORDE INVISIBLE: */
+  border: 1px solid transparent; 
+  box-sizing: border-box;
+}
+
+/* 1. Efecto Hover para el ítem ROSA */
+.timeline-item.glow-rosa:hover .timeline-contenido {
+  border: 1px solid var(--neon-rosa); /* Aparece el borde neón */
+  box-shadow: 0 0 20px rgba(255, 51, 187, 0.15), inset 0 0 15px rgba(255, 51, 187, 0.05); /* Brillo exterior e interior */
+  border-radius: 12px;
+}
+
+/* 2. Efecto Hover para el ítem CYAN */
+.timeline-item.glow-cyan:hover .timeline-contenido {
+ 
+  border: 1px solid var(--neon-cyan);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.15), inset 0 0 15px rgba(0, 229, 255, 0.05);
+  border-radius: 12px;
+}
+
+/* 3. (Opcional pero le da mucha onda) Que el puntito de la línea brille más al hacer hover en la tarjeta */
+.timeline-item.glow-rosa:hover .timeline-punto {
+  box-shadow: 0 0 20px var(--neon-rosa);
+  background-color: var(--neon-rosa); /* Se rellena el punto */
+  transition: all 0.3s ease;
+}
+
+.timeline-item.glow-cyan:hover .timeline-punto {
+  box-shadow: 0 0 20px var(--neon-cyan);
+  background-color: var(--neon-cyan);
+  transition: all 0.3s ease;
+}
+
+/* Efectos Glow (Bordes de la tarjeta) */
+
+
+
+
+/* Textos de la tarjeta */
+.timeline-cabecera {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.icono {
+  font-size: 2.2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.textos-cabecera {
+  flex-grow: 1;
+}
+
+.textos-cabecera h3 {
+  margin: 0 0 5px 0;
+  font-size: clamp(1.1rem, calc(1rem + 0.5vw), 1.3rem);
+  line-height: 1.2;
+}
+
+.glow-rosa h3 { color: var(--neon-rosa); }
+.glow-cyan h3 { color: var(--neon-cyan); }
+
+.textos-cabecera h4 {
+  margin: 0 0 5px 0;
+  font-size: 1.05rem;
+  color: var(--texto-principal);
+  font-weight: 500;
+}
+
+.fecha {
+  font-size: 0.9rem;
+  color: var(--texto-secundario);
+  display: block;
+}
+
+.timeline-contenido ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.timeline-contenido li {
+  margin-bottom: 8px;
 }

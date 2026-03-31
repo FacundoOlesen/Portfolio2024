@@ -34,7 +34,7 @@ const buttonPressed = e => {
         cc.classList.add("hidden");
 
     }
-    else if (text.includes("Skills") || text.includes("Habil")) {
+    else if (text.includes("Exp") ) {
 
         skills.classList.add("show")
 

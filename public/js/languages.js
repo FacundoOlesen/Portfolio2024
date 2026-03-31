@@ -17,6 +17,10 @@ const formTitles2 = document.querySelector(".form h5")
 const formIpts = document.querySelectorAll(".ipt label")
 const get = document.querySelectorAll('[href="assets/FacundoOlesen_resume.pdf"]');
 const sendValue = document.querySelector(".submit")
+const expTitles = document.querySelectorAll(".timeline-cabecera h3");
+const expSubtitles = document.querySelectorAll(".timeline-cabecera h4");
+const expDates = document.querySelectorAll(".timeline-cabecera .fecha");
+const expListItems = document.querySelectorAll(".timeline-contenido ul li");
 
 window.addEventListener('onload', setES())
 
@@ -68,49 +72,30 @@ function setEN() {
         </g>
     </svg>Buenos Aires, Argentina`
     menu[0].innerHTML = "About"
-    menu[1].innerHTML = "Proyects"
-    menu[2].innerHTML = "Skills"
+    menu[1].innerHTML = "Experience"
+    menu[2].innerHTML = "Proyects"
     menu[3].innerHTML = "Contact"
     greet.innerHTML = "Hi! 👋"
     pAbout[0].innerHTML = "I am Facundo Olesen, a passionate programmer. Graduated with a Bachelor's degree in Software Development from <a class='link-underlined'  href='https://www.unicen.edu.ar/' target='_blank'>UNICEN</a>, Argentina."
-pAbout[1].innerHTML = `In 2024, I completed an internship at EDSA, where I gained hands-on experience working as a Software Developer. I'm currently a freelance software developer. Take a closer look at a recent project <a class='link-underlined'  href='https://www.estudioulloaymorel.com.ar/' target='_blank'>here.</a></a> <br><br>
+    
+    pAbout[1].innerHTML = `In 2024, I completed an internship at EDSA, where I gained hands-on experience working as a Software Developer. I'm currently a freelance software developer. Take a closer look at a recent project <a class='link-underlined'  href='https://www.estudioulloaymorel.com.ar/' target='_blank'>here.</a> <br><br>
 💻 <strong>My tech stack:</strong><br>
 • <strong>Back-End:</strong> Java, Spring (Boot, Cloud), Microservices, JPA, Hibernate, PHP.<br>
 • <strong>Front-End & Design:</strong> JavaScript, React, HTML, CSS, Figma, UX/UI.<br>
 • <strong>Data & Infrastructure:</strong> SQL, MySQL, PostgreSQL, Docker.<br>
-• <strong>Others:</strong> Git, RPA, UiPath, JUnit, TestNG.`;    pAbout[2].innerHTML = "During my academic career, I've built a solid base in programming, data structures, and algorithms, Object-Oriented Programming (OOP), UX/UI. <br> <br> Furthermore, I have also worked on web development projects using different technologies for the Front-End (HTML, CSS, and JavaScript) and the Back-End (JAVA, Spring, Spring Boot, Spring Cloud, Microservices, JPA, Hibernate, Docker | PHP and MySQL)."
-    pAbout[3].innerHTML = "Every day, I seek new opportunities to learn and grow in the field of web development. My goal is not only to apply my technical skills to innovative projects, it is also to contribute to the team with a proactive approach and creative solutions."
-    pAbout[4].innerHTML = "I'm excited to continue evolving as a professional and be part of projects that challenge and inspire. Ready to bring my passion and skills to projects that make a difference."
-    pAbout[5].innerHTML = "I look forward to hearing from you!"
-    pAbout[6].innerHTML = "Stay awesome!"
-    figCapAbout.innerHTML = "Facu working in some of his projects 😅"
-    pin[0].innerHTML = "Pinned"
-    pin[1].innerHTML = "Pinned"
-    pin[2].innerHTML = "Pinned"
-    pin[3].innerHTML = "Pinned"
-    pin[4].innerHTML = "Pinned"
-    pin[5].innerHTML = "Pinned"
-    pin[6].innerHTML = "Pinned"
-    pin[7].innerHTML = "Pinned"
-    pin[8].innerHTML = "Pinned"
-    pin[9].innerHTML = "Pinned"
+• <strong>Others:</strong> Git, RPA, UiPath, JUnit, TestNG.
+<br><br>
+During my academic career, I've built a solid base in programming, data structures, and algorithms, Object-Oriented Programming (OOP), UX/UI.<br>`;
 
-    skillsName[0].innerHTML = "HTML5"
-    skillsLabel[0].innerHTML = "🎨 Front - End"
-    skillsName[2].innerHTML = "CSS3"
-    skillsLabel[2].innerHTML = "🎨 Front - End"
-    skillsName[4].innerHTML = "JavaScript"
-    skillsLabel[4].innerHTML = "🎨 Front - End"
-    skillsName[1].innerHTML = "JAVA"
-    skillsLabel[1].innerHTML = "👨‍💻 Back - End"
-    skillsName[3].innerHTML = "PHP"
-    skillsLabel[3].innerHTML = "👨‍💻 Back - End"
-    skillsName[5].innerHTML = "MySQL"
-    skillsLabel[5].innerHTML = "📊 Database"
-    skillsName[6].innerHTML = "Figma"
-    skillsLabel[6].innerHTML = "🎨 Front - End"
-    skillsName[7].innerHTML = "Git"
-    skillsLabel[7].innerHTML = "💾 Version"
+    pAbout[2].innerHTML = "Every day, I seek new opportunities to learn and grow in the field of web development. My goal is not only to apply my technical skills to innovative projects, it is also to contribute to the team with a proactive approach and creative solutions."
+    
+    pAbout[3].innerHTML = "I'm excited to continue evolving as a professional and be part of projects that challenge and inspire. Ready to bring my passion and skills to projects that make a difference."
+    
+    pAbout[4].innerHTML = "I look forward to hearing from you!"
+    
+    pAbout[5].innerHTML = "Stay awesome!"
+    figCapAbout.innerHTML = "Facu working in some of his projects 😅"
+
     /*formDate.innerHTML="24 Nov 2023"*/
     formTitle.innerHTML = "Do you want to leave me a message? Fill in this form."
     formTitles1.innerHTML = "FORM"
@@ -122,6 +107,23 @@ pAbout[1].innerHTML = `In 2024, I completed an internship at EDSA, where I gaine
     sendValue.value = "Send"
     formTitle2.innerHTML = "Your message was sent successfully. I will be in touch with you soon. Bye!"
     figForm.innerHTML = "I'm delighted that you've come this far."
+
+    // TRADUCCIÓN EXPERIENCIA A INGLÉS
+    expTitles[0].innerHTML = "Software Developer";
+    expSubtitles[0].innerHTML = "Freelance";
+    expDates[0].innerHTML = "Mar 2025 - Present";
+    
+    expTitles[1].innerHTML = "Software Development Intern";
+    expSubtitles[1].innerHTML = "EDSA";
+    expDates[1].innerHTML = "Aug 2024 - Dec 2024";
+
+    expListItems[0].innerHTML = "Led the full development lifecycle: From gathering requirements with the client to the production deployment of a Single Page Application (SPA).";
+    expListItems[1].innerHTML = "Frontend Optimization: Developed a responsive interface using React.js and custom Hooks, achieving a 75% reduction in load time.";
+    expListItems[2].innerHTML = "Component Architecture: Designed a library of reusable and modular components, facilitating future maintenance and site scalability.";
+    expListItems[3].innerHTML = "Client Satisfaction: Delivered the final product strictly meeting deadlines and ensuring mobile accessibility.";
+    
+    expListItems[4].innerHTML = "Process Automation (RPA): Designed and implemented software bots using VB .NET and LINQ queries to automate data extraction from multiple e-commerce platforms.";
+    expListItems[5].innerHTML = "Collaborated on projects applying coding best practices.";
 
 }
 
@@ -173,8 +175,8 @@ function setES() {
     </g>
 </svg>Buenos Aires, Argentina`
     menu[0].innerHTML = "Acerca de"
-    menu[1].innerHTML = "Proyectos"
-    menu[2].innerHTML = "Habilidades"
+    menu[1].innerHTML = "Experiencia"
+    menu[2].innerHTML = "Proyectos"
     menu[3].innerHTML = "Contacto"
     greet.innerHTML = "¡Hola! 👋"
     pAbout[0].innerHTML = "Me gradué como Técnico Universitario en Desarrollo de Aplicaciones Informáticas en la <a class='link-underlined' href='https://www.unicen.edu.ar/' target='_blank'>UNICEN</a>, Argentina."
@@ -187,37 +189,12 @@ function setES() {
 <br><br>
 Durante mi carrera académica, he construido una sólida base en programación, estructuras de datos y algoritmos, Programación Orientada a Objetos (POO), UX/UI.<br>`;
 
-pAbout[2].innerHTML = "Cada día, busco nuevas oportunidades para aprender y crecer en el ámbito del desarrollo web. Mi objetivo no es solo aplicar mis habilidades técnicas en proyectos innovadores, si no también contribuir al equipo con un enfoque proactivo y soluciones creativas."
+    pAbout[2].innerHTML = "Cada día, busco nuevas oportunidades para aprender y crecer en el ámbito del desarrollo web. Mi objetivo no es solo aplicar mis habilidades técnicas en proyectos innovadores, si no también contribuir al equipo con un enfoque proactivo y soluciones creativas."
     pAbout[3].innerHTML = "Estoy emocionado por seguir evolucionando como profesional y ser parte de proyectos que desafíen e inspiren. Preparado para aportar mi pasión y habilidades a iniciativas que marquen la diferencia."
     pAbout[4].innerHTML = "¡Espero escuchar de tí!"
     pAbout[5].innerHTML = "¡Cuídate!"
     figCapAbout.innerHTML = "Facu trabajando en uno de sus proyectos. 😅"
-    pin[0].innerHTML = "Fijado"
-    pin[1].innerHTML = "Fijado"
-    pin[2].innerHTML = "Fijado"
-    pin[3].innerHTML = "Fijado"
-    pin[4].innerHTML = "Fijado"
-    pin[5].innerHTML = "Fijado"
-    pin[6].innerHTML = "Fijado"
-    pin[7].innerHTML = "Fijado"
-    pin[8].innerHTML = "Fijado"
-    pin[9].innerHTML = "Fijado"
-    skillsName[0].innerHTML = "HTML5"
-    skillsLabel[0].innerHTML = "🎨 Front - End"
-    skillsName[2].innerHTML = "CSS3"
-    skillsLabel[2].innerHTML = "🎨 Front - End"
-    skillsName[4].innerHTML = "JavaScript"
-    skillsLabel[4].innerHTML = "🎨 Front - End"
-    skillsName[1].innerHTML = "JAVA"
-    skillsLabel[1].innerHTML = "👨‍💻 Back - End"
-    skillsName[3].innerHTML = "PHP"
-    skillsLabel[3].innerHTML = "👨‍💻 Back - End"
-    skillsName[5].innerHTML = "MySQL"
-    skillsLabel[5].innerHTML = "📊 BBDD"
-    skillsName[7].innerHTML = "Git"
-    skillsLabel[7].innerHTML = "💾 Versionado"
-    skillsName[6].innerHTML = "Figma"
-    skillsLabel[6].innerHTML = "🎨 Front - End"
+    
     /*formDate.innerHTML="24 Nov 2023"*/
     formTitle.innerHTML = "¿Quieres dejarme un mensaje? Completá este formulario."
     formTitles1.innerHTML = "FORMULARIO"
@@ -229,6 +206,23 @@ pAbout[2].innerHTML = "Cada día, busco nuevas oportunidades para aprender y cre
     sendValue.value = "Enviar"
     formTitle2.innerHTML = "Has enviado tu mensaje con éxito. Me contactaré contigo pronto. ¡Adiós!"
     figForm.innerHTML = "Estoy muy contento de que hayas llegado hasta aquí."
+
+    // TRADUCCIÓN EXPERIENCIA A ESPAÑOL
+    expTitles[0].innerHTML = "Desarrollador de Software";
+    expSubtitles[0].innerHTML = "Freelance";
+    expDates[0].innerHTML = "Mar 2025 - Presente";
+    
+    expTitles[1].innerHTML = "Pasante de Desarrollo de Software";
+    expSubtitles[1].innerHTML = "EDSA";
+    expDates[1].innerHTML = "Ago 2024 - Dic 2024";
+
+    expListItems[0].innerHTML = "Lideré el ciclo completo de desarrollo: Desde la toma de requerimientos con el cliente hasta el despliegue en producción de una Single Page Application (SPA).";
+    expListItems[1].innerHTML = "Optimización de Frontend: Desarrollé una interfaz responsive utilizando React.js y Hooks personalizados, logrando una reducción del 75% en el tiempo de carga.";
+    expListItems[2].innerHTML = "Arquitectura de Componentes: Diseñé una biblioteca de componentes reutilizables y modulares, facilitando el mantenimiento futuro y la escalabilidad del sitio.";
+    expListItems[3].innerHTML = "Satisfacción del Cliente: Entregué el producto final cumpliendo estrictamente con los plazos y asegurando la accesibilidad en dispositivos móviles.";
+    
+    expListItems[4].innerHTML = "Automatización de Procesos (RPA): Diseñé e implementé bots de software utilizando VB .NET y consultas LINQ para automatizar la extracción de datos de múltiples plataformas e-commerce.";
+    expListItems[5].innerHTML = "Colaboración en proyectos aplicando buenas prácticas de código.";
 
 }
 
