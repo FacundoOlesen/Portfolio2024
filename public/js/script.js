@@ -15,7 +15,7 @@ proyects.classList.add("hidden");
 contact.classList.add("hidden");
 
 
-
+document.getElementById("current-year").textContent = "Facundo Olesen © " +  new Date().getFullYear();
 
 const buttonPressed = e => {
     let text = e.srcElement.innerHTML;
