@@ -1515,12 +1515,8 @@ footer {
     
 }
 
-/* =========================================
-   SECCIÓN EXPERIENCIA (1 COLUMNA)
-   ========================================= */
-
 :root {
-  --fondo-tarjeta: #212529; /* Gris oscuro que combina con los hovers de tus botones */
+  --fondo-tarjeta: #212529; 
   --texto-principal: #ffffff;
   --texto-secundario: #a0a0b0;
   --neon-rosa: #ff33bb;
@@ -1534,20 +1530,19 @@ footer {
 }
 .seccion-timeline {
   width: 100%;
-  padding: 20px 0; /* Sin paddings laterales extra para no pelear con tu .info-main */
-  font-family: var(--font-family); /* Hereda tu fuente global */
+  padding: 20px 0; 
+  font-family: var(--font-family); 
   color: var(--texto-principal);
   box-sizing: border-box;
 }
 
 .titulo-seccion {
-  text-align: left; /* Alineado a la izquierda para seguir tu estilo */
+  text-align: left; 
   font-size: var(--font-size-h2);
   margin-bottom: 40px;
   color: var(--color);
 }
 
-/* Contenedor principal de la línea */
 .timeline {
   position: relative;
   width: 100%;
@@ -1565,17 +1560,16 @@ footer {
   top: 0;
   bottom: 0;
   left: 20px; 
-  transform: translateX(-50%); /* Centrado matemático exacto */
+  transform: translateX(-50%); 
   border-radius: 4px;
   z-index: 0;
 }
 
-/* Contenedor de cada item */
 .timeline-item {
   width: 100%; 
   position: relative;
   box-sizing: border-box;
-  padding-left: 60px; /* Deja el hueco perfecto para la línea y el punto */
+  padding-left: 60px; 
 }
 
 /* Los puntos sobre la línea */
@@ -1583,10 +1577,10 @@ footer {
   position: absolute;
   width: 18px;
   height: 18px;
-  background-color: hsl(214 14% 10%); /* Mismo color de fondo de tu web */
+  background-color: hsl(214 14% 10%); 
   top: 30px;
   left: 20px;
-  transform: translateX(-50%); /* Alineación perfecta con la línea */
+  transform: translateX(-50%); 
   border-radius: 50%;
   z-index: 1;
 }
@@ -1602,28 +1596,24 @@ footer {
   box-shadow: 0 0 10px var(--neon-rosa);
 }
 
-/* Tarjetas de contenido */
 .timeline-contenido {
   width: 100%; 
   padding: 25px;
   background-color: var(--fondo-tarjeta);
   border-radius: 12px;
   position: relative;
-  /* CAMBIA LA TRANSICIÓN A ESTA: */
   transition: all 0.3s ease;
-  /* AGREGÁ ESTE BORDE INVISIBLE: */
   border: 1px solid transparent; 
   box-sizing: border-box;
 }
 
-/* 1. Efecto Hover para el ítem ROSA */
+
 .timeline-item.glow-rosa:hover .timeline-contenido {
-  border: 1px solid var(--neon-rosa); /* Aparece el borde neón */
+  border: 1px solid var(--neon-rosa); 
   box-shadow: 0 0 20px rgba(255, 51, 187, 0.15), inset 0 0 15px rgba(255, 51, 187, 0.05); /* Brillo exterior e interior */
   border-radius: 12px;
 }
 
-/* 2. Efecto Hover para el ítem CYAN */
 .timeline-item.glow-cyan:hover .timeline-contenido {
  
   border: 1px solid var(--neon-cyan);
@@ -1631,10 +1621,9 @@ footer {
   border-radius: 12px;
 }
 
-/* 3. (Opcional pero le da mucha onda) Que el puntito de la línea brille más al hacer hover en la tarjeta */
 .timeline-item.glow-rosa:hover .timeline-punto {
   box-shadow: 0 0 20px var(--neon-rosa);
-  background-color: var(--neon-rosa); /* Se rellena el punto */
+  background-color: var(--neon-rosa); 
   transition: all 0.3s ease;
 }
 
@@ -1644,12 +1633,6 @@ footer {
   transition: all 0.3s ease;
 }
 
-/* Efectos Glow (Bordes de la tarjeta) */
-
-
-
-
-/* Textos de la tarjeta */
 .timeline-cabecera {
   display: flex;
   align-items: flex-start;

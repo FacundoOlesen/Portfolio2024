@@ -207,7 +207,6 @@ Durante mi carrera académica, he construido una sólida base en programación, 
     formTitle2.innerHTML = "Has enviado tu mensaje con éxito. Me contactaré contigo pronto. ¡Adiós!"
     figForm.innerHTML = "Estoy muy contento de que hayas llegado hasta aquí."
 
-    // TRADUCCIÓN EXPERIENCIA A ESPAÑOL
     expTitles[0].innerHTML = "Desarrollador de Software";
     expSubtitles[0].innerHTML = "Freelance";
     expDates[0].innerHTML = "Mar 2025 - Presente";
